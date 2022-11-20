@@ -1,0 +1,12 @@
+streamlit
+pillow
+python-dotenv
+streamlit-option-menu
+htbuilder
+pandas
+scipy
+matplotlib
+seaborn
+xgboost
+sklearn
+imblearn
