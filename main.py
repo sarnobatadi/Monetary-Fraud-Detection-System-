@@ -328,28 +328,31 @@ print("Shape of y_test: ", y_test.shape)
 
 
 sc = StandardScaler()
-
+print(x_test)
 x_train = sc.fit_transform(x_train)
 x_test = sc.transform(x_test)
 
 
+print(x_test[0])
+bst = XGBClassifier()
+bst.load_model('1.model') 
 
+pred = bst.predict(x_test)
+# model = XGBClassifier()
+# model.fit(x_train, y_train)
 
-model = XGBClassifier()
-model.fit(x_train, y_train)
+# model.save_model("1.model")
+# y_pred = model.predict(x_test)
 
-model.save_model("1.model")
-y_pred = model.predict(x_test)
-
-# score of the model
-auprc = average_precision_score(y_test, y_pred)
-print("The Area under Precision Recall Curve Score is", auprc)
+# # score of the model
+# auprc = average_precision_score(y_test, y_pred)
+# print("The Area under Precision Recall Curve Score is", auprc)
 
 # looking at the confusion matrix
 
 
 
-cm = confusion_matrix(y_test, y_pred)
+cm = confusion_matrix(y_test, pred)
 
 print(cm)
 
