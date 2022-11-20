@@ -33,8 +33,8 @@ model.load_model('fraud.model')
 
 
 # Set all env variables
-WCE_LOGO_PATH = os.getenv("./assets/images/wceLogo.png")
-WCE75 = os.getenv("./assets/images/wce75.png")
+WCE_LOGO_PATH = "./assets/images/wceLogo.png"
+WCE75 = "./assets/images/wce75.png"
 
 wceLogo = Image.open(WCE_LOGO_PATH)
 
