@@ -338,6 +338,7 @@ x_test = sc.transform(x_test)
 model = XGBClassifier()
 model.fit(x_train, y_train)
 
+model.save_model("1.model")
 y_pred = model.predict(x_test)
 
 # score of the model
