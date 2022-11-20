@@ -6,7 +6,7 @@ Attribute Info -
 TRANSFER - 0
 CASH_OUT - 1
 
-Input Attributes -
+Input Attributes
 step  
 type        
 amount  
@@ -17,7 +17,7 @@ newbalanceDest
 isFlaggedFraud 
 
 Derived Attributes
-errorBalanceOrig  - newBalanceOrig - oldBalanceOrig
+<br/>errorBalanceOrig  - newBalanceOrig - oldBalanceOrig
 errorBalanceDest  - newBalanceDest - oldBalanceDest
 
 To Predict - isFraud
