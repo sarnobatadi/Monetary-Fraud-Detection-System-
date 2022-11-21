@@ -190,7 +190,7 @@ elif main_option == "Prediction":
             isFlaggedFraud = 0
 
         errorbalanceOrig  = newbalanceOrig + amount - oldbalanceOrig
-        errorbalanceDest  = newbalanceDest + amount - oldbalanceDest
+        errorbalanceDest  = - newbalanceDest + amount + oldbalanceDest
 
         x_test = [[step ,type,amount,oldbalanceOrig,newbalanceOrig,oldbalanceDest ,newbalanceDest,isFlaggedFraud,errorbalanceOrig,errorbalanceDest]]
 
